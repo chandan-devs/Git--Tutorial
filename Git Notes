@@ -9,19 +9,26 @@ $ git add -A
 $ git commit -m"commit name"
 $ git checkout "file name"
 $ git checkout -f
-$ git log 
+$ git log
 $ git log -p -2
-$ git diff 
+$ git diff
 $ git diff --staged
 $ git commit -a -m "commit name"
 $ git rm --cached "file name"
 $ git rm "file name"
+$ git status -s
 $ touch .gitignore
+/mylog.log in the root folder
+*.log (git rm --cached logs/mylogs.log) it will ignore the log file in the other folder
+ignore/ (it ignores a particular folder)
 $ git branch "branch name"
 $ git branch
 $ git checkout "branch name"
 $ git merge "branch name"
-$ git checkout -b "branch name"
+$ git checkout -b "branch name" (branch is made and also added to get commit )
+$ git remote add origin "URL"
+$ git remote
+$ git remote -v
 $ ssh-keygen -t ed25519 -C "chandangupta.devs@gmail.com"
 $ eval "$(ssh-agent -s)"
 $ ssh-add ~/.ssh/id_ed25519
@@ -33,3 +40,8 @@ $ git push
 $ cd /clone
 $ git clone https://github.com/xing4git/blog.git chax
 
+OR
+
+$ git remote set-url origin git@github.com:CodeWithChax/Git-Tutorial.git
+$ git remote
+$ git remote -v
